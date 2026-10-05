@@ -27,7 +27,7 @@ def main():
 		names=None if head else columns
 	)
 
-	data = data.drop(columns=data.columns[0])
+	data = data.drop(columns=["id"])
 
 	data = data.sample(frac=1, random_state=51).reset_index(drop=True)
 
