@@ -143,6 +143,8 @@ def	main():
 	layers = [30] + hidden_layers + [2]
 	print("Layers configuration:", layers)
 
+	np.random.seed(51)
+
 	for i in range(len(layers) - 1):
 		input_s = layers[i]
 		output_s = layers[i + 1]

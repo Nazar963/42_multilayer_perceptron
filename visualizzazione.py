@@ -9,12 +9,12 @@ def main():
 	print(data.head())
 	print(data.shape)
 
-	# diagnosis_counts = data[1].value_counts()
-	# plt.bar(diagnosis_counts.index, diagnosis_counts.values)
-	# plt.xlabel('Diagnosis')
-	# plt.ylabel('Count')
-	# plt.title('Diagnosis Counts')
-	# plt.savefig('diagnosis_counts.png')
+	diagnosis_counts = data[1].value_counts()
+	plt.bar(diagnosis_counts.index, diagnosis_counts.values)
+	plt.xlabel('Diagnosis')
+	plt.ylabel('Count')
+	plt.title('Diagnosis Counts')
+	plt.savefig('diagnosis_counts.png')
 
 	# plt.hist(data[2])
 	# plt.xlabel("Feature 2 value")

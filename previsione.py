@@ -31,6 +31,7 @@ def main():
 
 	print (X.shape, Y.shape)
 	_, A = feedForward(X, W, B)
+	# print("this is the result", A[-1])
 	p = np.argmax(A[-1], axis=1)
 	bce = loss(A[-1], Y)
 	accuracy = np.mean(p == Y)
